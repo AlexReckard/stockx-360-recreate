@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>360 Image Example</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="images/nike-logo.png">
+    
+    <script src="https://cdn.scaleflex.it/plugins/js-cloudimage-360-view/3.0.3/js-cloudimage-360-view.min.js"></script>
+
+</head>
+<body>
+    <nav class="localnav">
+        <div class="localnav-bg">
+            <div class="localnav-content">
+                <h2 class="localnav-title">RetailX</h2>
+                <div class="localnav-searchbar"><img class="search-icon"src="images/icons8-search.svg" width="16px" alt=""> Search for brand, color, etc.</div>
+                <!-- mobile-menu -->
+                <div class="ham">
+                    <div class="line1"></div>
+                    <div class="line2"></div>
+                    <div class="line3"></div>
+                </div>
+                <div class="localnav-menu">
+                    <div class="localnav-menu-tray">
+                
+                        <ul class="localnav-menu-items">
+                            <li class="localnav-menu-item">
+                                <div class="mobile-search">
+                                    <img class="search-icon"src="images/icons8-search.svg" width="16px" alt=""> Search for brand, color, etc.
+                                </div>
+                              
+                            </li>
+                            <li class="localnav-menu-item">
+                                <span>Browse</span>
+                            </li>
+                            <li class="localnav-menu-item">
+                                <span>News</span>
+                            </li>
+                            <li class="localnav-menu-item">
+                                <span>About</span>
+                            </li>
+                            <li class="localnav-menu-item">
+                                <span>Help</span>
+                            </li>
+                            <div>
+                                
+                            </div>
+                            <li class="localnav-menu-item">
+                                <span id="login-btn">Login</span>
+                            </li>
+                            <li class="localnav-menu-item">
+                                <span id="sign-up-btn">Sign Up</span>
+                            </li>
+                            <li class="localnav-menu-item">
+                                <span id="sell-btn">Sell</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </nav>
+    <!-- end nav section -->
+
+    <div class="main">
+    <div class="container">
+        <div class="shoe-name-container">
+            <div class="shoe-type">
+                <h2>Jordan 1 Retro High</h2>
+                <div class="shoe-name">
+                    <span>Off-White University Blue</span>
+                </div>
+            </div>
+           
+              
+        </div>    
+     
+        <div class="shoe-condition-container">
+            <div class="shoe-condition">
+                <ul class="shoe-details">
+                    <li class="authentic">100% Authentic</li>
+                    <li class="condition">Condition:<span id="new"> New</span></li>
+                </ul>
+            </div>
+        </div>
+
+    </div>
+
+        <div class="img-container">
+            <div 
+            class="cloudimage-360"
+            data-folder= "images/ow-aj1-ub/"
+            data-filename-x="img_({index}).jpg"
+            data-amount-x="36">
+                
+            </div>
+            <div class="shoe-size-container">
+                <div class="options" id="options">
+                    <div class="option hide-option" id="hide-option"><p class="option-top">Select Shoe Size:</p><img class="drop-down-arrow"src="images/drop-down-arrow.png" width="16px" alt=""></div>
+                    
+                </div>
+            </div>
+            <div class="order-sell-container">
+                <ul class="order-list">
+                    <li class="buy">Buy</li>
+                    <li class="sell">Sell</li>
+                </ul>
+            </div>
+            
+        </div>
+
+        <div class="product-desc-container">
+            <div class="product-det">
+                <h3>Product Details</h3>
+                <ul class="product-list">
+                    <li>Style:
+                        <span> AQ0818-148</span></li>
+                    <li>Colorway: <span id="shoe-color"" > WHITE/DARK POWDER BLUE-CONE</span>
+                    </li>
+                    <li>Retail:<span> US$190</span></li>
+                    <li>Release Date:<span> 23/06/2018</span></li>
+                </ul>
+            </div>
+
+            <div class="product-desc">
+                <h3>Product Description</h3>
+                <span>
+                    Time for some Tobacco Road vibes with these Jordan 1 Retro Off-Whites. Also known as the “UNC” editions, these Jordan 1s are the third colorway designed by Virgil Abloh and made in collaboration with his<span id="dots">...</span><span id="more"> Off-White label. The sneakers come in a white, dark powder blue and cone colorway, with a white and blue deconstructed leather upper and Off-White detailing throughout. If you’re a fan of Virgil Abloh’s work and want to rep Off-White, this pair is another must-have.   
+                    </span>
+                </span>
+                <button onclick="readMore()" id="readMoreBtn">Read More</button>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-mini">
+            <div class="footer-mini-content">
+                <h1 class="footer-header">RetailX. Not StockX.</h1>
+                <div class="product-links-container">
+                    <ul class="product-links-column">
+                        <li class="groupheader">Air Jordan</li>
+                        <li>Air Jordan 1</li>
+                        <li>Air Jordan 4</li>
+                        <li>Air Jordan 11</li>
+                        <li>Women's Jordans</li>
+                        <li>Jordan 1 Mid</li>
+                    </ul>
+                    <ul class="product-links-column">
+                        <li class="groupheader">Yeezy</li>
+                        <li>Yeezy Boost 350</li>
+                        <li>Yeezy Boost 350 v2</li>
+                        <li>Yeezy Boost 700</li>
+                        <li>Yeezy Slides</li>
+                        <li>Yeezy Foam RNNR</li>
+                    </ul>
+                    <ul class="product-links-column">
+                        <li class="groupheader">Tech</li>
+                        <li>PS5</li>
+                        <li>Xbox Series X</li>
+                        <li>PS5 Controller</li>
+                        <li>Nintendo Switch OLED</li>
+                        
+                    </ul>
+                    <ul class="product-links-column">
+                        <li class="groupheader">Apparel</li>
+                        <li>Yeezy</li>
+                        <li>Off-White</li>
+                        <li>Dior</li>
+                        <li>Vlone</li>
+                        <li>AMIRI</li>
+                    </ul>
+                    <ul class="product-links-column">
+                        <li class="groupheader">Collectibles</li>
+                        <li>KAWS Figures</li>
+                        <li>Pokemon Cards</li>
+                        <li>NBA Cards</li>
+                        <li>Paintings</li>
+                    </ul>
+                </div>
+            <div class="footer-line"></div>
+
+            <div class="social-links">
+                <div class="language-region-currency"></div>
+                <div class="social-icon-group">
+                    <p class="social-text">Find Us on Social</p>
+                    <div class="social-icons">
+                    <ul>
+                        <li><img src="images/social-icons/icons8-twitter.svg" width="32px"alt="twitter"></li>
+                        <li><img src="images/social-icons/icons8-facebook.svg" width="32px"alt="facebook"></li>
+                        <li><img src="images/social-icons/icons8-instagram.svg" width="32px"alt="instagram"></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="social-icon-group">
+                    <p class="social-text">Download Our App</p>
+                    <div class="social-icons">
+                    <ul>
+                        <li><img src="images/social-icons/icons8-apple-logo.svg" width="32px" alt="apple"></li>
+                        <li><img src="images/social-icons/icons8-android-os.svg" width="32px" alt="android"></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="social-icon-group">
+                    <p class="social-text">Use Assistive Technology</p>
+                    <div class="social-icons">
+                        <ul>
+                            <li><img src="images/social-icons/icons8-assistive-technology-50.png" width="32px" alt="assistive Technology"></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="social-icon-group">
+                    <p class="social-text"><a href="https://www.youtube.com/watch?v=w5vE1MeMcbA" target="_blank">Proudly Built in Detroit</a></p>
+                    <div class="social-icons">
+                        <ul>
+                            <li><img src="images/social-icons/icons8-construction-worker-50.png" width="32px" alt="built icon"></li>
+                        </ul>
+                    </div>
+                    <p class="recreatedBy">Recreated for educational purposes by: <a href="https://alexreckard.com" target="_blank">Alex Reckard</a></p>
+                    
+                   
+                    
+                </div>
+            </div>
+            </div>
+        </div>
+    </footer>
+    <script src="js/js-cloudimage-360-view.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
